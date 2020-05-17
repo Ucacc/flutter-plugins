@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - umpush (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - umpush (from `.symlinks/plugins/umpush/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  umpush:
+    :path: ".symlinks/plugins/umpush/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  umpush: 817b8d3e8f9089b522095ea9a7e1bea17d9f6962
+
+PODFILE CHECKSUM: f32fb4e7c14f8b3ca19a369d7be425dd9241af27
+
+COCOAPODS: 1.9.1
