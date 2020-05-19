@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
     String platformVersion;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      platformVersion = await Umpush.platformVersion;
+      platformVersion = await UMeng.platformVersion;
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
@@ -50,7 +50,23 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: ListView(
+            children: <Widget>[
+              FlatButton(
+                child: Text('setup'),
+                onPressed: () {
+                  UMeng.setup(appKey: "5ec1030d0cafb22cd000006b", channel: "App Store", enabledLog: true);
+                },
+              ),
+              FlatButton(
+                child: Text('applyForPushAuthorization'),
+                onPressed: () {
+                  UMeng.applyForPushAuthorization(UMessageAuthorizationOptions.Sound | UMessageAuthorizationOptions.Badge | UMessageAuthorizationOptions.Alert);
+                },
+              ),
+
+            ],
+          )
         ),
       ),
     );

@@ -1,11 +1,31 @@
 PODS:
   - Flutter (1.0.0)
+  - UMCCommon (2.1.4)
+  - UMCCommonLog (1.0.0)
+  - UMCPush (3.2.4):
+    - UMCCommon
+  - UMCSecurityPlugins (1.0.6)
   - umpush (0.0.1):
     - Flutter
+    - UMCCommon
+    - UMCCommonLog
+    - UMCPush
+    - UMCSecurityPlugins
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
+  - UMCCommon (~> 2.1.4)
+  - UMCCommonLog (~> 1.0.0)
+  - UMCPush (~> 3.2.4)
+  - UMCSecurityPlugins (~> 1.0.6)
   - umpush (from `.symlinks/plugins/umpush/ios`)
+
+SPEC REPOS:
+  trunk:
+    - UMCCommon
+    - UMCCommonLog
+    - UMCPush
+    - UMCSecurityPlugins
 
 EXTERNAL SOURCES:
   Flutter:
@@ -15,8 +35,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  umpush: 817b8d3e8f9089b522095ea9a7e1bea17d9f6962
+  UMCCommon: b0703b0053323f598e01670ea702b8eb1e66e611
+  UMCCommonLog: 05a2d5de21858e3d870551562cff405c1366d244
+  UMCPush: 1edd856027dcf905333effb4040ace5d236a7316
+  UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
+  umpush: f4de59d6fa2e828d884f7166af4f126839eab8fc
 
-PODFILE CHECKSUM: f32fb4e7c14f8b3ca19a369d7be425dd9241af27
+PODFILE CHECKSUM: 6c91dd16bbb8ae5cff5e3eb800dac3a8476fcf2a
 
 COCOAPODS: 1.9.1

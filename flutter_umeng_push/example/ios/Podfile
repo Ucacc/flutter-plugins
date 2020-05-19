@@ -62,6 +62,10 @@ target 'Runner' do
   pod 'Flutter', :path => 'Flutter'
 
   # Plugin Pods
+  pod 'UMCCommon', '~>2.1.4'
+  pod 'UMCCommonLog', '~>1.0.0'
+  pod 'UMCSecurityPlugins', '~>1.0.6'
+  pod 'UMCPush', '~>3.2.4'
 
   # Prepare symlinks folder. We use symlinks to avoid having Podfile.lock
   # referring to absolute paths on developers' machines.
